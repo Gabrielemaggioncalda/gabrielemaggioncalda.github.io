@@ -1,24 +1,30 @@
- <!DOCTYPE.html>
-<html>
-<head>
-    <title>benvenuti su questo sito!!</title>
-    <style>
-      body {
-         color: green;
-         background-color: red;
-     } 
-     #titolo1 {
-     	color: yellow;
-     }
-      .ciao {
-     	color: brown;
-     }
-    </style>
-  </head>
-  <body>
-    <h1 id= "titolo1">Ciao e benvenuti nel mio magico sito!</h1><br>
-   <p class= "ciao"> Password esatta! benvenuto/a nel sito!</p>
-    <img src="http://www.starcoppe.it/images/grafica-immagine-b.jpg"/>
-<a href="https://www.google.it/search?q=magia&client=safari&hl=it-it&prmd=ivn&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi91b6dyMzdAhUCJBoKHVQ1AKEQ_AUIESgB&biw=320&bih=454&dpr=2#imgrc=rsRrpOB8nFG4TM"><br>apri il link per visualizzare l'immagine</>
-   </body>
-</html>
+
+<title>benvenuti su questo sito!!</title>
+<style>
+body {
+color: green;
+background-color: red;
+} 
+#titolo1 {
+color: yellow;
+}
+.ciao {
+color: brown;
+}
+</style>
+</head>
+<body>
+<h1 id= "titolo1">Ciao e benvenuti nel mio magico sito!</h1><br>
+<p class= "ciao"> Password esatta! benvenuto/a nel sito!</p>
+
+<input type= "button" value= "estrai l'interrogato!" id= "estrazione.btn" onClick= "estrai()"/><br>
+<script>
+function estrai() {
+var n = Math.floor(Math.random() * 16) + 1;
+alert(n);
+}
+</script>
+<img src="http://www.starcoppe.it/images/grafica-immagine-b.jpg"/>
+<a href="#imgrc=rsRrpOB8nFG4TM"><br>apri">https://www.google.it/search?q=magia&clie... il link per visualizzare l'immagine</>
+</body>
+</html> 
