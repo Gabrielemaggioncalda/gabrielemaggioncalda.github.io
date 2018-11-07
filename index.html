@@ -4,17 +4,45 @@
  <title>giochino!</title>
  </head>
  <body>
+ <!--creazione giochino-->
   <h1 id= "titolo1">Ciao e benvenuti in questo  sito!</h1><br>
   <b>Vuoi giocare???</b>
-  <p>farai un piccolo quiz!</p>
-  <h4> Domanda 1: Che cosa significa la sigla DOM?</h4>
+  <p id= "p1">farai un piccolo quiz!</p>
+  <h4> Domanda 1: Che cosa sta ad indicare la sigla DOM?</h4>
   <input type= "text" value= "" id= "domanda1"><br>
-  <input type= "button" value="conferma!" id="conferma.btn">
-  <script>
+  <input type= "button" value="conferma!" id="conferma.btn" onClick= "funzione1()">
+  <p id= "giusto.p"></p>
+  <p id= "sbagliato.p"></p>
+  <p id= "spiegazioneDOM"></p><br>
+  <i>Come è stato programmato questo sito:</i>
+  <ol>
+  <!--creo un erore di ortografia che poi andrò a correggere in JS-->
+  <li><i>Linguaggio <span class= "HTMO">HTMO</span></i></li>
+  <li><i>Linguaggio JavaScript</i></li>
+  </ol>
+   <script>
+   //Funzione che m permette di far funzinare il giochino
+   function funzione1() {
    if(document.getElementById("domanda1").value == "Document Object Model") {
-    
+    document.getElementById("giusto.p").innerHTML= "Risposta corretta! Ottimo!";
+     document.getElementById("conferma.btn").disabled= "true";
+     document.getElementById("spiegazioneDOM").innerHTML= "In informatica il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.";
+   } else if(document.getElementById("domanda1").value != "Document Object Model") {
+    document.getElementById("sbagliato.p").innerHTML= "Risposta sbaliata! Riprova, hai tutti i tentativi che vuoi!"
    }
+   }
+   //cambio stile in JS con quanto appreso su KA
    var titoloEl = document.getElementById("titolo1");
    titoloEl.style.textAlign = "center";
+   titoloEl.style.backgroundColor= "green";
+   var p1 = document.getElementById("p1");
+   p1.style.color= "red";
+   p1.style.fontFamily= "cursive";
+   p1.style.backgroundColor= "brown";
+   //correggo problema HTMO
+   var nameEls = document.getElementsByTagName("span");
+   for(var i= 0; i<nameEls.length;i++) {
+   nameEls[i].innerHTML= "HTML";
+   }
   </script>
   </html>
