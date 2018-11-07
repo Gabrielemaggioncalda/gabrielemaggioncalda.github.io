@@ -13,20 +13,22 @@
   <input type= "button" value="conferma!" id="conferma.btn" onClick= "funzione1()">
   <p id= "giusto.p"></p>
   <p id= "sbagliato.p"></p>
-  <p id= "spiegazioneDOM"></p><br>
+  <p id= "spiegazioneDOM"></p>
+  <a id="link1" href= "https://it.wikipedia.org/wiki/Document_Object_Model"></a><br>
   <i>Come è stato programmato questo sito:</i>
-  <ol>
   <!--creo un erore di ortografia che poi andrò a correggere in JS-->
+  <ol>
   <li><i>Linguaggio <span class= "HTMO">HTMO</span></i></li>
   <li><i>Linguaggio JavaScript</i></li>
   </ol>
    <script>
-   //Funzione che m permette di far funzinare il giochino
+   //Funzione che mi permette di far funzionare il giochino
    function funzione1() {
    if(document.getElementById("domanda1").value == "Document Object Model") {
     document.getElementById("giusto.p").innerHTML= "Risposta corretta! Ottimo!";
      document.getElementById("conferma.btn").disabled= "true";
      document.getElementById("spiegazioneDOM").innerHTML= "In informatica il Document Object Model (spesso abbreviato come DOM), letteralmente modello a oggetti del documento, è una forma di rappresentazione dei documenti strutturati come modello orientato agli oggetti.";
+     document.getElementById("link1").innerHTML = "Leggi di più su Wikipedia";
    } else if(document.getElementById("domanda1").value != "Document Object Model") {
     document.getElementById("sbagliato.p").innerHTML= "Risposta sbaliata! Riprova, hai tutti i tentativi che vuoi!"
    }
@@ -46,3 +48,4 @@
    }
   </script>
   </html>
+
