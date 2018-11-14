@@ -1,4 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<style>
+body {
+background-color: red;
+}
+li {
+font-family: cursive;
+}
+</style>
+<h1><i> ESTRAI L'INTERROGATO DI OGGI!</i></h1>
+<ol><i>
+<li> Idan </li>
+<li> alex </li>
+<li> Leam </li>
+<li> Sacha </li>
+<li> Michelle </li>
+<li> Isaac </li>
+<li> Jacopo </li>
+<li> Gadi </li>
+<li> Noemi </li>
+<li> David </li>
+<li> Gabriel </li>
+<li> Leopoldo </li>
+<li> Nicolò </li>
+<li> Romina </li>
+<li> Simon </li>
+</i></ol>
+<input type="button" id="estrazione.btn" value="estrai l'interrogato!" onClick="estrai()"><br>
+<input type="button" id="nuovaestrazione.btn" value="Clicca per una nuova estrazione dall'inizio!" onClick="funzione2()">
 
+<script>
+function estrai() {
+var i = Math.floor(Math.random()*15);
+document.getElementsByTagName("li")[i].style.color="blue";
+}
+function funzione2() {
+window.location.reload();
+}
+</script>
+</body>
+</html>
+
+<!---codice vecchia pagina-->
+<!---
+<!DOCTYPE html>
 <title>benvenuti su questo sito!!</title>
 <style>
 body {
@@ -28,3 +77,4 @@ alert(n);
 <a href="https://www.google.it/search?q=magia&client=safari&hl=it-it&prmd=ivn&source=lnms&tbm=isch&sa=X&ved=0ahUKEwin1rbR3aneAhUIQhoKHT1vBp0Q_AUIEigB&biw=320&bih=454&dpr=2#imgrc=rsRrpOB8nFG4TM">apri il link per visualizzare l'immagine!</>
 </body>
 </html> 
+-->
