@@ -12,7 +12,8 @@
 <div id="div"></div>
 <script>
 var number= document.getElementById("number");
-var div = document.getElementById("div");    
+var div = document.getElementById("div"); 
+//funzione che imposta l'algoritmo
 function Radice(){
  if(number.value>0){
  var x = number.value/2;
@@ -26,7 +27,7 @@ function Radice(){
       div.innerHTML = "Il numero deve essere maggiore di 0!";
 }
 };  
-//()
+//funzione integrata del programma SQRT
 function sqrt(){
 div.innerHTML = Math.sqrt(number.value);
 };
