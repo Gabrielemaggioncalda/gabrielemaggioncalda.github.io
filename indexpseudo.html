@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generare sequenza di numeri pseudocasuali</title>
+</head>
+<body>
+<h2>Genera la tua sequenza di numeri!</h2>
+<p>Immetti un seme!</p>
+<input type="number"  id= "number"/>
+<input type= "button" value= "genera la sequenza!" id= "btn1" onClick= "sequenza()"/><br>
+<div id= "div"></div><br>
+<script>
+
+	var div= document.getElementById("div");
+    var seme = document.getElementById("number");
+    var button= document.getElementById("btn1");
+    
+	var m= 16;
+	var a= 5;
+	var c= 1;
+	var x= 0;
+	function sequenza() {
+		div.textContent= "";
+		for(var i= 0; i < 16; i++){
+	  		x = ((a*seme.value)+c)%m;
+       		div.innerHTML += x+'<br>';
+      		seme.value = x;
+    	}
+    }
+
+</script>
+</body>
+</html>
