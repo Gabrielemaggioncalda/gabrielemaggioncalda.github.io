@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
- <p>Scrivi la password per accedere al sito!</p>
- <form>
- <input type="password" value= "" id="password"><br>
- <input type= "button" value= "Accedi al sito!" id= "button password" onClick= "accedi()"/>
- </form>
- <script>
+<head>
+<title>benvenuti su questo sito!!</title>
+<style>
+    body {
+      color: green;
+    }
+</style>
+</head>
+<body>
+<p>Scrivi la password per accedere al sito!</p>
+<input type="password" value= "" id="password"><br>
+<input type= "button" value= "Accedi al sito!" id= "button password" onClick= "accedi()"/>
+<script>
   function accedi() {
    if (document.getElementById("password").value== "0000") {
-   window.open("https://gabrielemaggioncalda.github.io/index2.html");
+     window.open("https://gabrielemaggioncalda.github.io/index2.html");
    } else {
-   alert("password sbagliata! Riprova!");
-  }
-  }
-                                                                      
- </script>
-  <head>
-    <title>benvenuti su questo sito!!</title>
-    <style>
-      body {
-         color: green;
-      }
-    </style>
-  </head>
-  <body>
-    <p>Ciao e benvenuti nel mio magico sito!</p>
-    <img src="http://www.starcoppe.it/images/grafica-immagine-b.jpg"/><br>
+     alert("password sbagliata! Riprova!");
+   }
+   }                                                                
+</script>
+<p>Ciao e benvenuti nel mio magico sito!</p>
+<img src="http://www.starcoppe.it/images/grafica-immagine-b.jpg"/><br>
 <a href="https://www.google.it/search?q=magia&client=safari&hl=it-it&prmd=ivn&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi91b6dyMzdAhUCJBoKHVQ1AKEQ_AUIESgB&biw=320&bih=454&dpr=2#imgrc=rsRrpOB8nFG4TM">apri il link per visualizzare l'immagine</>
- </body>
+</body>
 </html>
