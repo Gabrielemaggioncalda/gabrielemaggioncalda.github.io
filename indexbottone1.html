@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>GIOCHETTO!</title>
+<title>GIOCHINO!</title>
 <style>
-body{
-background-color: red;
-}
+ body{
+   background-color: red;
+ }
 </style>
 </head>
 <body>
@@ -14,13 +14,13 @@ background-color: red;
 <script>
 //creazione programma per bottone che scappa se ci passa sopra il mouse
 var bottonEl= document.getElementById("bottone.btn");
-funzione = function() {
-	var XPosition= Math.floor(Math.random()* 500);
-    var YPosition= Math.floor(Math.random()* 500);
-	bottonEl.style.position= "absolute";
-    bottonEl.style.top= XPosition + "px";
-    bottonEl.style.left= YPosition + "px";
-}
+ funzione = function() {
+     var XPosition= Math.floor(Math.random()* 500);
+     var YPosition= Math.floor(Math.random()* 500);
+     bottonEl.style.position= "absolute";
+     bottonEl.style.top= XPosition + "px";
+     bottonEl.style.left= YPosition + "px";
+ }
 bottonEl.addEventListener("mouseover", funzione);
 </script>
 </body>
