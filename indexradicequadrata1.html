@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Inserisci un Numero</p>
+<input type="number" id="number" oninput="Radice()"/><p>Calcolo radice quadrata!</p>
+<input type="button" id= "btn1" onClick= "sqrt()" value= "metodo sqrt"/>
+<div id="div"></div>
+<script>
+var number= document.getElementById("number");
+var div = document.getElementById("div");    
+function Radice(){
+ if(number.value>0){
+ var x = number.value/2;
+ var y = number.value/x;
+    for(var i=0;i<50;i++){
+       x = (x+y)/2
+       y = number.value/x
+};
+      div.innerHTML = x;
+}else{
+      div.innerHTML = "Il numero deve essere maggiore di 0!";
+}
+};  
+//()
+function sqrt(){
+div.innerHTML = Math.sqrt(number.value);
+};
+</script>
+</body>
+</html>
