@@ -7,39 +7,103 @@
 <body>
   <h1>QUIZ</h1><br>
   <p>DOMANDA 1:</p>
-  <p>Di che colore era il cavallo bianco di Napoleone?</p>
-  <input type= "radio" id= "radio1" name= "colore"/>A. ROSSO<br>
-  <input type= "radio" id= "radio2"  name= "colore"/>B. VERDE<br>
-  <input type= "radio" id= "radio3"  name= "colore"/>C. GIALLO<br>
-  <div id="div1"><input type= "radio" id= "radio4"  name= "colore" id= "giusto1" onClick= "funzione1()"/>D. NESSUNA DELLE RISPOSTE PRECEDENTI</div><br>
-   <p>DOMANDA 2:</p>
-   <p>Chi ha scoperto l'America?</p>
-  <div id="div2"><input type= "radio" id= "radio1" name= "america" id= "giusto2" onClick= "funzione2()"/>A. CRISTOFORO COLOMBO</div>
-  <input type= "radio" id= "radio2"  name= "america"/>B. VASCO DA GAMA<br>
-  <input type= "radio" id= "radio3"  name= "america"/>C. SI E' SCOPERTA DA SOLA<br>
-  <input type= "radio" id= "radio4"  name= "america"/>D. KHAN ACADEMY<BR>
-  <p>DOMANDA 3:</p>
-   <p>Come si chiama Paolo?</p>
-   <div id="div3.1"><input type= "radio" id= "radio1" name= "paolo" onClick= "funzione3.1()"/>A. GIOVANNI</div><br>
-   <div id="div3.2"><input type= "radio" id= "radio2"  name= "paolo" onClick= "funzione3.2()"/>B. PAOLINO</div><br>
-   <div id="div3.3"><input type= "radio" id= "radio3"  name= "paolo" onClick= "funzione3.3()"/>C. LUCA</div><br>
-  <div id="div3"><input type= "radio" id= "radio4"  name= "paolo" id= "giusto3" onClick= "funzione3()"/>D. PAOLO</div><br>
+ <div id= "divmagica"><p>Di che colore era il cavallo bianco di Napoleone?</p>
+  <div id= "div11"><input type= "radio" id= "radio1" name= "colore" onClick= "funzione11()"/>A. ROSSO</div>
+  <div id= "div12"><input type= "radio" id= "radio2"  name= "colore" onClick= "funzione12()"/>B. VERDE</div>
+  <div id= "div13"><input type= "radio" id= "radio3"  name= "colore" onClick= "funzione13()"/>C. GIALLO</div>
+  <div id="div1"><input type= "radio" id= "radio4"  name= "colore" id= "giusto1" onClick= "funzione1()"/>D. NESSUNA DELLE RISPOSTE PRECEDENTI</div></div>
   <p id= "p1"></p>
+   <p>DOMANDA 2:</p>
+   <div id= "divmagica2"><p>Chi ha scoperto l'America?</p>
+  <div id="div2"><input type= "radio" id= "radio1" name= "america" id= "giusto2" onClick= "funzione2()"/>A. CRISTOFORO COLOMBO</div>
+  <div id="div21"><input type= "radio" id= "radio2"  name= "america" onClick= "funzione21()"/>B. VASCO DA GAMA</div>
+  <div id="div22"><input type= "radio" id= "radio3"  name= "america" onClick= "funzione22()"/>C. SI E' SCOPERTA DA SOLA</div>
+  <div id="div23"><input type= "radio" id= "radio4"  name= "america" onClick= "funzione23()"/>D. KHAN ACADEMY</div></div>
+  <p id= "p2"></p>
+  <p>DOMANDA 3:</p>
+   <div id= "divmagica3"><p>Come si chiama Paolo?</p>
+   <div id="div31"><input type= "radio" id= "radio1" name= "paolo" onClick= "funzione31()"/>A. GIOVANNI</div>
+   <div id="div32"><input type= "radio" id= "radio2"  name= "paolo" onClick= "funzione32()"/>B. PAOLINO</div>
+   <div id="div33"><input type= "radio" id= "radio3"  name= "paolo" onClick= "funzione33()"/>C. LUCA</div>
+  <div id="div3"><input type= "radio" id= "radio4"  name= "paolo" id= "giusto3" onClick= "funzione3()"/>D. PAOLO</div></div>
+  <p id= "p3"></p>
+  <input type= "button" value= "completa il quiz e vedi il risultato!" id= "btn1" onClick= "fine()"/>
   
   <script>
   var div1= document.getElementById("div1");
   var div2= document.getElementById("div2");
   var div3= document.getElementById("div3");
+  var div11= document.getElementById("div11");
+  var div12= document.getElementById("div12");
+  var div13= document.getElementById("div13");
+  var div21= document.getElementById("div21");
+  var div22= document.getElementById("div22");
+  var div23= document.getElementById("div23");
+  var div31= document.getElementById("div31");
+  var div32= document.getElementById("div32");
+  var div33= document.getElementById("div33");
+  var divmagica= document.getElementById("divmagica");
+  var divmagica2= document.getElementById("divmagica2");
+  var divmagica3= document.getElementById("divmagica3");
+  var p1= document.getElementById("p1");
+  var p2= document.getElementById("p2");
+  var p3= document.getElementById("p3");
+
+   
+   
   function funzione1() {
   	div1.style.backgroundColor= "green";
+    p1.textContent= "RISPOSTA GIUSTA!";
+    divmagica.textContent= "";
   }
    function funzione2() {
   	div2.style.backgroundColor= "green";
+    p2.textContent= "RISPOSTA GIUSTA!";
+    divmagica2.textContent= "";
   }
    function funzione3() {
   	div3.style.backgroundColor= "green";
+    p3.textContent= "RISPOSTA GIUSTA!";
+    divmagica3.textContent= "";
+  }
+  function funzione31() {
+  	div31.style.backgroundColor= "red";
+    p3.textContent= "RISPOSTA SBAGLIATA!";
+  }
+   function funzione32() {
+  	div32.style.backgroundColor= "red";
+    p3.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione33() {
+  	div33.style.backgroundColor= "red"; 
+    p3.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione21() {
+  	div21.style.backgroundColor= "red"; 
+    p2.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione22() {
+  	div22.style.backgroundColor= "red"; 
+    p2.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione23() {
+  	div23.style.backgroundColor= "red";
+    p2.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione11() {
+  	div11.style.backgroundColor= "red";
+    p1.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione12() {
+  	div12.style.backgroundColor= "red";
+    p1.textContent= "RISPOSTA SBAGLIATA!";
+  }
+  function funzione13() {
+  	div13.style.backgroundColor= "red";
+    p1.textContent= "RISPOSTA SBAGLIATA!";
   }
 
+  
   </script>
   
   
