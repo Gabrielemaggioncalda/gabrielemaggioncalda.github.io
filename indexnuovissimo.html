@@ -9,34 +9,43 @@
 </style>
 </head>
 <body>
-  <h1>QUIZ</h1><br>
-  <p>DOMANDA 1:</p>
+  <div id= "divsuprema"><h1 id= "h1">QUIZ</h1><br>
+  <fieldset>
+  <legend><strong>DOMANDA 1:</strong></legend>
  <div id= "divmagica"><p>Di che colore era il cavallo bianco di Napoleone?</p>
   <div id= "div11"><input type= "radio" id= "radio1" name= "colore" onClick= "funzione11()"/>A. ROSSO</div>
   <div id= "div12"><input type= "radio" id= "radio2"  name= "colore" onClick= "funzione12()"/>B. VERDE</div>
   <div id= "div13"><input type= "radio" id= "radio3"  name= "colore" onClick= "funzione13()"/>C. GIALLO</div>
   <div id="div1"><input type= "radio" id= "radio4"  name= "colore" id= "giusto1" onClick= "funzione1()"/>D. NESSUNA DELLE RISPOSTE PRECEDENTI</div></div>
   <p id= "p1"></p>
-   <p>DOMANDA 2:</p>
+  </fieldset>
+  <fieldset>
+   <legend><strong>DOMANDA 2:</strong></legend>
    <div id= "divmagica2"><p>Chi ha scoperto l'America?</p>
   <div id="div2"><input type= "radio" id= "radio1" name= "america" id= "giusto2" onClick= "funzione2()"/>A. CRISTOFORO COLOMBO</div>
   <div id="div21"><input type= "radio" id= "radio2"  name= "america" onClick= "funzione21()"/>B. VASCO DA GAMA</div>
   <div id="div22"><input type= "radio" id= "radio3"  name= "america" onClick= "funzione22()"/>C. SI E' SCOPERTA DA SOLA</div>
   <div id="div23"><input type= "radio" id= "radio4"  name= "america" onClick= "funzione23()"/>D. KHAN ACADEMY</div></div>
   <p id= "p2"></p>
-  <p>DOMANDA 3:</p>
+  </fieldset>
+  <fieldset>
+  <legend><strong>DOMANDA 3:</strong></legend>
    <div id= "divmagica3"><p>Come si chiama Paolo?</p>
    <div id="div31"><input type= "radio" id= "radio1" name= "paolo" onClick= "funzione31()"/>A. GIOVANNI</div>
    <div id="div32"><input type= "radio" id= "radio2"  name= "paolo" onClick= "funzione32()"/>B. PAOLINO</div>
    <div id="div33"><input type= "radio" id= "radio3"  name= "paolo" onClick= "funzione33()"/>C. LUCA</div>
   <div id="div3"><input type= "radio" id= "radio4"  name= "paolo" id= "giusto3" onClick= "funzione3()"/>D. PAOLO</div></div>
   <p id= "p3"></p>
-  <input type= "button" value= "completa il quiz e vedi il risultato!" id= "btn1" onClick= "fine()"/>
+  </fieldset><br>
+  <input type= "button" value= "completa il quiz e vedi il risultato!" id= "btn1" onClick= "fine()"/></div>
   
   <script>
+  var h1= document.getElementById("h1");
+  var btn1= document.getElementById("btn1");
   var div1= document.getElementById("div1");
   var div2= document.getElementById("div2");
   var div3= document.getElementById("div3");
+  var divsuprema= document.getElementById("divsuprema");
   var div11= document.getElementById("div11");
   var div12= document.getElementById("div12");
   var div13= document.getElementById("div13");
@@ -52,23 +61,30 @@
   var p1= document.getElementById("p1");
   var p2= document.getElementById("p2");
   var p3= document.getElementById("p3");
+  var punteggio= 0;
 
    
-   
+ h1.style.textAlign= "center";
+ h1.style.fontFamily= "cursive";
+ h1.style.backgroundColor= "purple";
+  
   function funzione1() {
   	div1.style.backgroundColor= "green";
     p1.textContent= "RISPOSTA GIUSTA!";
     divmagica.textContent= "";
+    punteggio+= 33;
   }
    function funzione2() {
   	div2.style.backgroundColor= "green";
     p2.textContent= "RISPOSTA GIUSTA!";
     divmagica2.textContent= "";
+    punteggio+= 33;
   }
    function funzione3() {
   	div3.style.backgroundColor= "green";
     p3.textContent= "RISPOSTA GIUSTA!";
     divmagica3.textContent= "";
+    punteggio+= 34;
   }
   function funzione31() {
   	div31.style.backgroundColor= "red";
@@ -106,13 +122,10 @@
   	div13.style.backgroundColor= "red";
     p1.textContent= "RISPOSTA SBAGLIATA!";
   }
-  function fine() {
-}
-
-
-  
+ function fine() {
+ 	window.open("https://gabrielemaggioncalda.github.io/indexindex.html", "_blank"); 
+ }
   </script>
-  
-  
 </body>
 </html>
+
