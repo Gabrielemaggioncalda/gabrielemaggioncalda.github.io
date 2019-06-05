@@ -62,65 +62,85 @@
   var p2= document.getElementById("p2");
   var p3= document.getElementById("p3");
   var punteggio= 0;
-
    
  h1.style.textAlign= "center";
  h1.style.fontFamily= "cursive";
  h1.style.backgroundColor= "purple";
   
   function funzione1() {
-  	div1.style.backgroundColor= "green";
+    div1.style.backgroundColor= "green";
     p1.textContent= "RISPOSTA GIUSTA!";
+    p1.style.backgroundColor= "green";
     divmagica.textContent= "";
     punteggio+= 33;
   }
    function funzione2() {
-  	div2.style.backgroundColor= "green";
+    div2.style.backgroundColor= "green";
     p2.textContent= "RISPOSTA GIUSTA!";
+    p2.style.backgroundColor= "green";
     divmagica2.textContent= "";
     punteggio+= 33;
   }
    function funzione3() {
-  	div3.style.backgroundColor= "green";
+    div3.style.backgroundColor= "green";
     p3.textContent= "RISPOSTA GIUSTA!";
+    p3.style.backgroundColor= "green";
     divmagica3.textContent= "";
     punteggio+= 34;
   }
   function funzione31() {
-  	div31.style.backgroundColor= "red";
+    div31.style.backgroundColor= "red";
     p3.textContent= "RISPOSTA SBAGLIATA!";
+    p3.style.backgroundColor= "red";
+    divmagica3.textContent= "";
   }
    function funzione32() {
-  	div32.style.backgroundColor= "red";
+    div32.style.backgroundColor= "red";
     p3.textContent= "RISPOSTA SBAGLIATA!";
+    p3.style.backgroundColor= "red";
+    divmagica3.textContent= "";
   }
   function funzione33() {
-  	div33.style.backgroundColor= "red"; 
+    div33.style.backgroundColor= "red"; 
     p3.textContent= "RISPOSTA SBAGLIATA!";
+    p3.style.backgroundColor= "red";
+    divmagica3.textContent= "";
   }
   function funzione21() {
-  	div21.style.backgroundColor= "red"; 
+    div21.style.backgroundColor= "red"; 
     p2.textContent= "RISPOSTA SBAGLIATA!";
+    p2.style.backgroundColor= "red";
+    divmagica2.textContent= "";
   }
   function funzione22() {
-  	div22.style.backgroundColor= "red"; 
+    div22.style.backgroundColor= "red"; 
     p2.textContent= "RISPOSTA SBAGLIATA!";
+    p2.style.backgroundColor= "red";
+    divmagica2.textContent= "";
   }
   function funzione23() {
-  	div23.style.backgroundColor= "red";
+    div23.style.backgroundColor= "red";
     p2.textContent= "RISPOSTA SBAGLIATA!";
+    p2.style.backgroundColor= "red";
+    divmagica2.textContent= "";
   }
   function funzione11() {
-  	div11.style.backgroundColor= "red";
+    div11.style.backgroundColor= "red";
     p1.textContent= "RISPOSTA SBAGLIATA!";
+    p1.style.backgroundColor= "red";
+    divmagica.textContent= "";
   }
   function funzione12() {
-  	div12.style.backgroundColor= "red";
+    div12.style.backgroundColor= "red";
     p1.textContent= "RISPOSTA SBAGLIATA!";
+    p1.style.backgroundColor= "red";
+    divmagica.textContent= "";
   }
   function funzione13() {
   	div13.style.backgroundColor= "red";
     p1.textContent= "RISPOSTA SBAGLIATA!";
+    p1.style.backgroundColor= "red";
+    divmagica.textContent= "";
   }
  function fine() {
  	document.write("<h1><strong><mark>FINE TEST</mark></strong></h1> Complimenti, hai completato il test!<br> il punteggio totalizzato è <strong><mark>" + punteggio + "%</mark></strong>" + "<br> Che cosa pensi del test appena svolto? Ti è stato utile? esprimiti di seguito:<br> <textarea autofocus>Scrivi qui...</textarea><br> Una volta finito di scrivere chiudi la pagina e il testo ci verrà spedito! Grazie del tuo feedback, ogni feedback da parte vostra ci aiuta a migliorare la qualità del nostro servizio.");
